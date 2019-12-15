@@ -7,5 +7,3 @@
 		print("Estas conectado");
 	}
 ?>
-
-dsdfsdss
