@@ -1,8 +1,8 @@
 <html>
  <head>
-  <title>Prueba de PHP</title>
+  <title>Prueba de PHP- git</title>
  </head>
  <body>
- <p>ADMIN</p>
+ <p>ADMIN git</p>
  </body>
 </html>
