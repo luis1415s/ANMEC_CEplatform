@@ -1,0 +1,115 @@
+html{
+	padding: 0px;
+	margin: 0px;
+}
+
+.aceptar,#regBt{
+	background-color: #f13453;
+	color:white;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 4px;
+	font-size: 1.3rem;
+
+
+}
+.aceptar:hover{
+	background-color: #4a4a4a;
+	cursor: pointer;
+}
+
+.menu2 a {
+  font-family : georgia;
+  font-size   : 14px;
+  font-style  : italic;
+  text-transform : capitalize;
+}
+
+.menu2 li {
+  border-right  : 1px solid rgba(200,200,255,0.5);
+  border-left   : 1px solid rgba(40,40,40,0.2); 
+}
+
+.selected {
+  top   : -20px;
+  color : #4eacff;
+  background-color: #fff;
+  box-shadow : 0 0 5px 0 rgba(255, 255, 255, 0.7);
+  transition : all .4s;
+}
+
+.selected:after {
+  border-color : white transparent transparent transparent;
+  transition   : all .4s;
+}
+
+a.fun {
+  display : none;
+}
+
+#formulario{
+	width: 30%;
+	height: auto;
+	margin:0 auto;
+	border: 0px solid black;
+	background-color: #D4FADE;
+}
+input{
+	width: 80%;
+	height: 30px;
+	border:1px solid #fafafa;
+	color:#1e1e1e;
+}
+#regBt{
+	width: 30%;
+	
+}
+#regBt:hover{
+	background-color: #5AC68A;
+	color: black;
+}
+
+#divmain{
+	width: 100%;
+	border: 0px solid black;
+	text-align: center;
+}
+ #usuario, #password{
+ 	width: 50%;
+ }
+
+ .aceptar{
+ 	width: 30%;
+ }
+
+ #promo{
+ 	align-items: center;
+ 	align-content: center;
+ 	text-align: center;
+ }
+
+ #promoIMG{
+ 	align-items: center;
+ 	align-content: center;
+ 	text-align: center;
+ }
+
+ /*Modelo de cajas para form*/
+#txtpregunta, #txtresp1, #txtresp2, #txtresp3, #txtcorrecta, #txtcvemod, #txtnommod, select{
+	border: 1px solid #AAC8EE;
+	
+}
+
+label{
+	-webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+    -moz-box-sizing: border-box;
+    width : 50%;
+}
+button{
+	border: 1px solid black;
+}
+
+#tr1{
+	text-align: center;
+}
+

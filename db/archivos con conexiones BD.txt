@@ -1,0 +1,22 @@
+Archivos que llevan conexion a BD.
+
+-- QUITAR CONTRASEÑA, DEJAR Usuario:root, y REVISAR nombreDB 
+
+$conexion=mysqli_connect("localhost", "root", "usbw","anmecexamen");
+
+1 validarCodigo.php
+2 validar.php
+3 regDB.php
+4 bienvenido.php (linea 69, 109, 134)
+5 db/addq.php
+6 db/delq.php
+
+7 validaModulo.php (4, 67)
+8 validaModulo2.php (4,66)
+9 validaModificacion (4)
+
+10 modulos.php (4,89,115)
+11 addm.php
+12 delm.php
+13 modm.php
+14 valMod_Modif_modulos.php (4,62)
