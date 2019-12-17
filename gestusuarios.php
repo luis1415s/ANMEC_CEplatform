@@ -48,93 +48,22 @@ if($varsesion ==  null || $varsesion= ''){
 </style>
 <?php include("panel_admin.php"); ?>
 <body>
-	<?php //include("welcome_msj.php"); ?>
 	<table>
 		<tr align="right" id="wm">
 			<td><?php include("welcome_msj.php"); ?></td>
 		</tr>
-		<tr id="tr1">
+		<tr>
 			<td>
-				<h4 id="opgptitle">¿Qué desea hacer?</h4>
-				<select name="opgp" id="opgp">
-					<option value="agregar">Agregar</option>
-					<option value="eliminar">Eliminar</option>
-					<option value="modificar">Modificar</option>
-				</select>
-				<button onclick="elegir()" id="opgpbtn">Continuar</button>
+			<div id="cabecera">
+  				<img src="img/swirl.png" width="1188" id="img1">
+  			</div>
 			</td>
 		</tr>
-		<tr id="tr1">
+		<tr>
 			<td>
-				<div id="divap">
-					<h4>Creación de módulo</h4>
-					<form action="db/addm.php" method="POST" accept-charset="utf-8">
-						<br>
-						<label>Clave del módulo (max. 10 carácteres)</label><br><input id="txtcvemod" type="text" name="txtcvemod" placeholder="Asigna una clave única al módulo" maxlength="10" required="true">
-						<br><br><br>
-						<label>Nombre de módulo (max. 50 carácteres)</label><br><input id="txtnommod" type="text" name="txtnommod" placeholder="Ingresa nombre del módulo" maxlength="50" required="true">
-						<br><br>
-						<button type="submit">Agregar Módulo</button>
-					</form>
-					<br>
-					<a href="modulos.php"><button>Cancelar</button></a>
-					<br><br>
-					<!--
-					</form>
-					<p>HOLA, YO AGREGO PREGUNTAS</p>-->
-				</div>
-				<div id="divep">
-					<form action="db/delm.php" method="POST" id="selmodForm" accept-charset="utf-8">
-						<h4>Seleccione módulo a eliminar:</h4>
-						<?php
-							mysql_select_db("anmecexamen");
-							$consulta="SELECT nom_mod,cve_mod from modulo";
-						 	$resultado=mysqli_query($conexion, $consulta);	 	
-						 ?>
-						<select name="selmod">
-						<?php
-							while ($fila=mysqli_fetch_array($resultado, MYSQL_NUM)) {
-								$fila[0]=utf8_encode($fila[0]);
-								$fila[1]=utf8_encode($fila[1]);
-								echo "<option value='$fila[1]'>".$fila[0]."</option>";
-							}
-						?>
-						</select>
-						<h5>Al eliminar este módulo se eliminarán todas sus preguntas</h5>
-						<button type="submit">Eliminar</button>
-					</form>
-					<br>
-					<a href="modulos.php"><button>Cancelar</button></a>
-					<br><br>
-					<!--<p>HOLA, YO ELIMINO PREGUNTAS</p>-->
-				</div>
-				<div id="divmp">
-					<form action="valMod_Modif_modulos.php" method="POST" id="selmodForm" accept-charset="utf-8">
-						<h4>Seleccione módulo de pregunta a modificar:</h4>
-						<?php
-							//$conexion=mysqli_connect('localhost', 'root', 'usbw', 'anmeceval');
-							mysql_select_db("anmecexamen");
-							$consulta="SELECT nom_mod,cve_mod from modulo";
-						 	$resultado=mysqli_query($conexion, $consulta);	 	
-						 ?>
-						<select name="selmod">
-						<?php
-							while ($fila=mysqli_fetch_array($resultado, MYSQL_NUM)) {
-								$fila[0]=utf8_encode($fila[0]);
-								$fila[1]=utf8_encode($fila[1]);
-								echo "<option value='$fila[1]'>".$fila[0]."</option>";
-							}
-						?>
-						</select>
-						<button type="submit">Continuar</button>
-					</form>
-					<br>
-					<a href="modulos.php"><button>Cancelar</button></a>
-					<br><br>
-					<!--<p>HOLA, YO MODIFICO PREGUNTAS</p>-->
-				</div>
+			<?php include("alumno.php");?>
 			</td>
-		</tr>	
+		</tr>
 </body>
 <script>
 	var gp=document.getElementById('gp');

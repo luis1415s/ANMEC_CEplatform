@@ -5,9 +5,9 @@ $gpFlag=1;
 $grFlag=0;
 $gmFlag=0;
 $msjnosesion="Debes iniciar sesión para poder ingresar";
-$msjnosesion=utf8_decode($msjnosesion);
+//$msjnosesion=utf8_decode($msjnosesion);
 $msjnosesionlink="Regresar e iniciar Sesión";
-$msjnosesionlink=utf8_decode($msjnosesionlink);
+//$msjnosesionlink=utf8_decode($msjnosesionlink);
 $varsesion = $_SESSION['usuario'];
 if($varsesion ==  null || $varsesion= ''){
 	echo "$msjnosesion<br><br><a href='index.php'>$msjnosesionlink</a>";
@@ -50,6 +50,13 @@ if($varsesion ==  null || $varsesion= ''){
 		<tr align="right" id="wm">
 			<td><?php include("welcome_msj.php"); ?></td>
 		</tr>
+		<tr>
+			<td>
+			<div id="cabecera">
+ 	 			<img src="img/swirl.png" width="100%" height="20%" id="img1">
+  			</div>
+			</td>
+		</tr>
 		<tr id="tr1">
 			<td>
 				<h4 id="opgptitle">¿Qué desea hacer?</h4>
@@ -66,10 +73,8 @@ if($varsesion ==  null || $varsesion= ''){
 				<div id="divap">
 					<h4>Seleccione módulo:</h4>
 					<form action="db/addq.php" method="POST" accept-charset="utf-8">
-						<?php
-						//include "conexion.php";
-							//$conexion=mysqli_connect('localhost', 'root', 'usbw', 'anmecexamen');
-							mysql_select_db("anmeceval");
+						<?php						
+							//mysql_select_db("anmeceval");
 							$consulta="SELECT nom_mod,cve_mod from modulo";
 						 	$resultado=mysqli_query($conexion, $consulta);
 						 ?>
@@ -106,7 +111,7 @@ if($varsesion ==  null || $varsesion= ''){
 						<h4>Seleccione módulo de pregunta a eliminar:</h4>
 						<?php
 							//$conexion=mysqli_connect('localhost', 'root', 'usbw', 'anmeceval');
-							mysql_select_db("anmeceval");
+							//mysql_select_db("anmeceval");
 							$consulta="SELECT nom_mod,cve_mod from modulo";
 						 	$resultado=mysqli_query($conexion, $consulta);	 	
 						 ?>
@@ -131,7 +136,7 @@ if($varsesion ==  null || $varsesion= ''){
 						<h4>Seleccione módulo de pregunta a modificar:</h4>
 						<?php
 							//$conexion=mysqli_connect('localhost', 'root', 'usbw', 'anmeceval');
-							mysql_select_db("anmeceval");
+							//mysql_select_db("anmeceval");
 							$consulta="SELECT nom_mod,cve_mod from modulo";
 						 	$resultado=mysqli_query($conexion, $consulta);	 	
 						 ?>

@@ -12,5 +12,5 @@
 
 <script type="text/javascript">
 	alert("Alumno Actualizado exitosamente");
-	window.location.href='alumno.php';
+	window.location.href='gestusuarios.php';
 </script>
