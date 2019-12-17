@@ -7,7 +7,6 @@
 		echo "Usted no tiene autorizacion";
 		die();
 	}
-
 	session_destroy();
 	header("Location:index.php");
 	?>
