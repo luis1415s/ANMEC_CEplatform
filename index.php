@@ -37,7 +37,7 @@
           <hr class="divider my-4">
         </div>
         <div class="col-lg-8 align-self-baseline">
-          <p  align="justify" class="text-white-75 font-weight-light mb-5">El examen de certificación del taller de procesos SAP es una invitación voluntaria a reconocer sus esfuerzos y ser recomendado en algunas bolsas de trabajo. El exámen es un tramite para certificarte como Usuario SAP y/o Analista SAP, constatando de manera electrónica lo que has venido practicando y aprendiendo.</p>
+          <p align="justify" class="text-white-75 font-weight-light mb-5">El examen de certificación del taller de procesos SAP es una invitación voluntaria a reconocer sus esfuerzos y ser recomendado en algunas bolsas de trabajo. El exámen es un tramite para certificarte como Usuario SAP y/o Analista SAP, constatando de manera electrónica lo que has venido practicando y aprendiendo.</p>
         </div>
       </div>
     </div>
