@@ -6,10 +6,11 @@
 	$respCorrecta=$_POST['txtcorrecta'];
 	$id_preg=$_GET['selpregm'];
 	$modulo=$_GET['opModuloSel'];
-	$conexion=mysqli_connect('localhost', 'root', 'usbw', 'anmeceval');
-	mysql_select_db("anmeceval");
-	//echo $pregunta." modulo:".$modulo;
-	$consulta="UPDATE pregunta SET desc_pregunta='$pregunta', resp1='$resp1', resp2='$resp2', resp3='$resp3', resp_correcta='$respCorrecta' where id_pregunta=$id_preg and cve_mod='$modulo'";
+	include "conexion.php";
+	//mysql_select_db("anmeceval");
+	//$conexion->select_db("anmeceval");
+	echo "<br>".$id_preg." modulo:".$modulo;
+	$consulta="UPDATE pregunta SET desc_pregunta='$pregunta', resp1='$resp1', resp2='$resp2', resp3='$resp3', resp_correcta=$respCorrecta where id_pregunta=$id_preg and cve_mod='$modulo'";
  	if (mysqli_query($conexion, $consulta))
  	{
  		include ('msjRight.php');

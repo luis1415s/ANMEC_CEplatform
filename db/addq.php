@@ -1,10 +1,10 @@
 <?php
 	error_reporting(0);
 	$modulo=$_POST['selmod'];
-	$pregunta=utf8_decode($_POST['txtpregunta']);
-	$resp1=utf8_decode($_POST['txtresp1']);
-	$resp2=utf8_decode($_POST['txtresp2']);
-	$resp3=utf8_decode($_POST['txtresp3']);
+	$pregunta=$_POST['txtpregunta'];
+	$resp1=$_POST['txtresp1'];
+	$resp2=$_POST['txtresp2'];
+	$resp3=$_POST['txtresp3'];
 	$respCorrecta=$_POST['txtcorrecta'];
 	//$conexion=mysqli_connect('localhost', 'root', 'usbw', 'anmecexamen');
 	include "conexion.php";
