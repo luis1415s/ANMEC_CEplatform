@@ -31,7 +31,7 @@
 				<form class="login100-form validate-form" action="validarLogin.php" method="post">
 					<div class="wrap-input100 validate-input m-b-26" data-validate="Correo requerido">
 						<span class="label-input100">Correo</span>
-						<input class="input100" type="text" name="usuario" placeholder="Ingresa Correo">
+						<input class="input100" type="text" name="usuario2" placeholder="Ingresa Correo">
 						<span class="focus-input100"></span>
 					</div>
 

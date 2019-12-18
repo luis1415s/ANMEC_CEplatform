@@ -13,9 +13,7 @@
 <body>
 <div class="todo">
   
-  <div id="cabecera">
-  	<img src="img/swirl.png" width="1188" id="img1">
-  </div>
+  
   
   <div id="contenido">
   	<table style="margin: auto; width: 800px; border-collapse: separate; border-spacing: 15px 5px;">

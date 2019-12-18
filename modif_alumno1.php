@@ -26,7 +26,7 @@
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Modificar Producto</title>
+<title>Modificar Alumno</title>
 <style type="text/css">
 @import url("css/mycss_alu.css");
 </style>

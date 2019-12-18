@@ -53,6 +53,13 @@ if($varsesion ==  null || $varsesion= ''){
 		<tr align="right" id="wm">
 			<td><?php include("welcome_msj.php"); ?></td>
 		</tr>
+		<tr>
+			<td>
+			<div id="cabecera">
+				<img src="img/swirl.png" width="100%" height="20%" id="img1">
+			</div>
+			</td>
+		</tr>
 		<tr id="tr1">
 			<td>
 				<h4 id="opgptitle">¿Qué desea hacer?</h4>
