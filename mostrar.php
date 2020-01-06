@@ -2,11 +2,12 @@
 	include "conex.php";
 	$consulta="SELECT id_pregunta, desc_pregunta, resp1, resp2, resp3, resp_correcta FROM pregunta";
 	$resultado= mysqli_query($conexion,$consulta);
+	$c=0;
 ?>
-<form action="evalExsap.php?c=<?php echo$c?>" method="POST">
+<form action="evalExsap.php" method="post">
 	<?php
 	if ($resultado) {
-		$c=0;
+		
 		while ($row = $resultado-> fetch_array())
 		{
 			$c=$c+1;
@@ -36,5 +37,6 @@
 	<br>
 	<button type='submit' class='btn btn-success'>Finalizar examen</button> </a>
     <button type='button' class='btn btn-danger'>Abandonar examen</button></a>
+	<input type="text" name="cont" id="contid" style="display: none;" value="<?php echo $c?>">
 </form>
 	<br>
