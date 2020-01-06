@@ -5,6 +5,6 @@
 	}
 	else{
 
-		print(".");
+		echo "<font color='#EFF0F3'>.</font>";
 	}
 ?>

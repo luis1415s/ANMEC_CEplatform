@@ -35,22 +35,17 @@ $varsesion2 = $_SESSION['usuarioex'];
         <img src="img/SAP_Logo2.png" id="im1" align="left"/>
         <img src="imagenes/anmec_logo.png" width="8%" id="im2" align="right"/>
       </div>
-      <h3 align="center" class="text-uppercase text-black">Examen de Certificación.</h3>
-      <h6 align="center" class="text text-black">Responde correctamente a las siguientes preguntas.</h6>
+      <h3 align="center" class="text-uppercase text-black"><b>Examen de Certificación.</b></h3>
+      <br>
+      <h4 align="center"><b>Alumno: </b><?php echo $_SESSION['usuarioex'] ?> </h4>
       <br><br>
-      <h5 align="right"> Usuario: <?php echo $_SESSION['usuarioex'] ?> </h5>
-      <div class="row h-100 align-items-center justify-content-center text-center">
-      <div>
-         <?php
-           include ("mostrar.php");
-         ?>        
-          <br>
-        </div>
-      </div>
-
-      <p align="center">
-       <button type='button' class='btn btn-success'>Terminar examen</button> </a>
-       <button type='button' class='btn btn-danger'>Abandonar examen</button></a>
+      <h5 align="center" class="text-black" style="padding-bottom: 20px; padding-top: 20px;  border-bottom: 5px solid #2351A9; border-top: 5px solid #2351A9;">Responde de forma correcta la siguiente evaluación. Al terminar, presiona el botón; "Finalizar examen" para guardar y enviar tus respuestas a nuestro sistema.</h5>
+    </div>
+    <div class="align-items-center justify-content-center text-center" style="border-top: 0px solid #2351A9;">
+      <?php
+        include ("mostrar.php");
+      ?>        
+      <br>
     </div>
 </body>
 </html>
