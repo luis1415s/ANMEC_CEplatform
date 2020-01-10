@@ -1,6 +1,6 @@
 <?php
 	include "conex.php";
-	$consulta="SELECT id_pregunta, desc_pregunta, resp1, resp2, resp3, resp_correcta FROM pregunta";
+	$consulta="SELECT id_pregunta, desc_pregunta, resp1, resp2, resp3, resp_correcta FROM pregunta ORDER BY id_pregunta";
 	$resultado= mysqli_query($conexion,$consulta);
 	$c=0;
 ?>
@@ -36,7 +36,7 @@
 	<br>
 	<br>
 	<button type='submit' class='btn btn-success'>Finalizar examen</button> </a>
-    <button type='button' class='btn btn-danger'>Abandonar examen</button></a>
+    <a href="cerrar_sesion_ex.php"><button type='button' class='btn btn-danger'>Abandonar examen</button></a>
 	<input type="text" name="cont" id="contid" style="display: none;" value="<?php echo $c?>">
 </form>
 	<br>

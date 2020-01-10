@@ -60,11 +60,12 @@
 					$consulta="SELECT desc_pregunta, resp1, resp2, resp3, resp_correcta from pregunta where id_pregunta=$selpregm";
 						$resultado=mysqli_query($conexion, $consulta);
 						while ($fila=mysqli_fetch_array($resultado, MYSQL_NUM)) {
-							$fila[0]=utf8_encode($fila[0]);
+							/*$fila[0]=utf8_encode($fila[0]);
 							$fila[1]=utf8_encode($fila[1]);
 							$fila[2]=utf8_encode($fila[2]);
 							$fila[3]=utf8_encode($fila[3]);
 							$fila[4]=utf8_encode($fila[4]);
+							*/
 						 /*foreach ($conexion->query('SELECT desc_pregunta,resp1,resp2,resp3,resp_correcta from pregunta where id_pregunta=1 and cve_mod="mod_prueba"') as $row) {
 						 	echo $row['desc_pregunta']."<br>";
 						 	echo $row['resp1']."<br>";

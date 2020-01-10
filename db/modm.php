@@ -1,7 +1,11 @@
 <?php
 	error_reporting(0);
+	$cveMod=$_POST['txtcvemod'];
+	$nomMod=$_POST['txtnommod'];
+	/*
 	$cveMod=utf8_decode($_POST['txtcvemod']);
 	$nomMod=utf8_decode($_POST['txtnommod']);
+	*/
 	$moduloOrigen=$_GET['opModuloSel'];
 	//$conexion=mysqli_connect('localhost', 'root', 'usbw', 'anmecexamen');
 	include "conexion.php";

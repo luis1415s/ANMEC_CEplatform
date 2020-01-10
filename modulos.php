@@ -101,8 +101,8 @@ if($varsesion ==  null || $varsesion= ''){
 						<select name="selmod">
 						<?php
 							while ($fila=mysqli_fetch_array($resultado, MYSQL_NUM)) {
-								$fila[0]=utf8_encode($fila[0]);
-								$fila[1]=utf8_encode($fila[1]);
+								/*$fila[0]=utf8_encode($fila[0]);
+								$fila[1]=utf8_encode($fila[1]);*/
 								echo "<option value='$fila[1]'>".$fila[0]."</option>";
 							}
 						?>
@@ -127,8 +127,8 @@ if($varsesion ==  null || $varsesion= ''){
 						<select name="selmod">
 						<?php
 							while ($fila=mysqli_fetch_array($resultado, MYSQL_NUM)) {
-								$fila[0]=utf8_encode($fila[0]);
-								$fila[1]=utf8_encode($fila[1]);
+								/*$fila[0]=utf8_encode($fila[0]);
+								$fila[1]=utf8_encode($fila[1]);*/
 								echo "<option value='$fila[1]'>".$fila[0]."</option>";
 							}
 						?>

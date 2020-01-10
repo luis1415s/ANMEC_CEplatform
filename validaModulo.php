@@ -76,8 +76,8 @@
 					 <select name="selpreg" id="opgp">
 					 <?php
 						while ($fila=mysqli_fetch_array($resultado, MYSQL_NUM)) {
-							$fila[2]=utf8_encode($fila[2]);
-							$fila[0]=utf8_encode($fila[0]);
+							/*$fila[2]=utf8_encode($fila[2]);
+							$fila[0]=utf8_encode($fila[0]);*/
 							echo "<option value='$fila[0]'>".$fila[2]."</option>";
 						}
 					?>

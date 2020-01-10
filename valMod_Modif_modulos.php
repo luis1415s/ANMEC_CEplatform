@@ -67,8 +67,8 @@
 						$consulta="SELECT cve_mod, nom_mod from modulo where cve_mod='$opModuloSel'";
 						$resultado=mysqli_query($conexion, $consulta);
 						while ($fila=mysqli_fetch_array($resultado, MYSQL_NUM)) {
-							$fila[0]=utf8_encode($fila[0]);
-							$fila[1]=utf8_encode($fila[1]);
+							/*$fila[0]=utf8_encode($fila[0]);
+							$fila[1]=utf8_encode($fila[1]);*/
 					?>
 					<label>Clave del módulo (max. 10 carácteres)</label><br><input id="txtcvemod" type="text" name="txtcvemod" value="<?php echo $fila[0]; ?>" maxlength="10" required="true">
 					<br><br><br>
