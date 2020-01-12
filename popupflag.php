@@ -9,7 +9,7 @@
 	<div id="popup" class="overlay">
    		<div id="popupBody">
        		<h2>HAZ CONCLUIDO TU EXAMEN.</h2>
-       		<a id="cerrar" href="cerrar_sesion_ex.php">&times;</a>
+       		<a id="cerrar" href="index.php">&times;</a>
        		<div class="popupContent">
           		<p>Tus respuestas han sido registradas, de parte del equipo de ANMEC; te deseamos éxito.</p>
        		</div>

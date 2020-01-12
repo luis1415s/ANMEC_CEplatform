@@ -48,8 +48,9 @@
     $promedio=number_format($promedio, 2, '.', '');
     //$consulta="SELECT id_user from usuario where correo_user=$";
     //$idusex=mysqli_query($conexion,$consulta);
-    $conspromIn="UPDATE usuarios SET aciertos=$puntaje, promedio=$promedio, flag=1 where correo_user='$varsesion2'";
+    $conspromIn="UPDATE usuario SET aciertos=$puntaje, promedio='$promedio', flag=1 where correo_user='$varsesion2'";
     //<?php /*echo $puntaje de <?php echo $c. Promedio: <?php echo $promedio
+    //echo "Valor de varsesion2:".$varsesion2;
     if (mysqli_query($conexion,$conspromIn))
     {
         include ("finalex.php");
